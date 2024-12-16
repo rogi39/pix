@@ -258,6 +258,8 @@ img
 		background-color: #fafafa
 	&_stock
 		background-color: #fff8dd
+	&_pricing
+		background-color: #fde999
 
 .container
 	padding: 0 10px
@@ -1255,6 +1257,8 @@ img
 		svg
 			fill: #fff
 			max-width: 20px
+	/* .table__col-value */
+	&__form-btn
 
 .billing
 	padding-bottom: 30px
@@ -1388,7 +1392,7 @@ img
 	/* .photo__btn-row */
 	&__btn-row
 		display: flex
-		gap: 4px
+		gap: 8px
 		margin-bottom: 16px
 	/* .photo__btn */
 	&__btn
@@ -1398,7 +1402,7 @@ img
 		gap: 4px
 		justify-content: center
 		padding: 13px 20px
-		width: 80%
+		width: 100%
 		border-radius: 8px
 		transition: background-color $tr
 		cursor: pointer
@@ -1415,6 +1419,7 @@ img
 		justify-content: center
 		width: 48px
 		height: 48px
+		flex: 0 0 48px
 		border-radius: 8px
 		cursor: pointer
 		transition: background-color $tr
@@ -1453,6 +1458,208 @@ img
 	&__img
 		max-height: 430px
 		object-fit: contain
+	/* .photo__download */
+	&__download
+		width: 100%
+	/* .photo__download-btn */
+	&__download-btn
+		border: none
+		width: 100%
+
+.search-item
+	color: $text
+	margin-bottom: 30px
+	display: block
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		p
+			color: $text
+	&__title
+		color: $text
+		font-size: 24px
+		line-height: 36px
+		margin-bottom: 10px
+	&__text
+		font-size: 16px
+		color: $text
+		margin-bottom: 10px
+	&__link
+		color: $accent
+
+.pricing
+	background-image: url('../images/dest/pricing.png')
+	background-repeat: no-repeat
+	background-position: center bottom
+	background-size: contain
+	/* .pricing__block */
+	&__block
+		max-width: 680px
+		margin-left: auto
+		margin-right: auto
+	/* .pricing__text */
+	&__text
+		text-align: center
+		max-width: 550px
+		font-weight: 500
+		margin: 12px auto
+	/* .pricing__credits */
+	&__credits
+		font-size: 20px
+		font-weight: 500
+		text-align: center
+		margin-bottom: 36px
+	/* .pricing__form */
+	&__form
+		background-color: #fff
+		border-radius: 8px
+		max-width: 630px
+		margin-left: auto
+		margin-right: auto
+		padding: 36px 12px
+
+	/* .pricing__form-title */
+	&__form-title
+		font-weight: 500
+		text-align: center
+		font-size: 24px
+		margin-bottom: 16px
+
+	/* .pricing__form-text */
+	&__form-text
+		text-align: center
+		max-width: 370px
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 24px
+	/* .pricing__form-card */
+	&__form-card
+		background-color: #000
+		border-radius: 8px
+		max-width: 430px
+		margin-right: auto
+		margin-left: auto
+		padding: 36px 16px
+		margin-bottom: 60px
+	/* .pricing__form-card-title */
+	&__form-card-title
+		font-size: 20px
+		color: #fff
+		font-weight: 500
+		text-align: center
+		margin-bottom: 32px
+	/* .pricing__form-card-input */
+	&__form-card-input
+		width: 100%
+		padding: 12px
+		text-align: center
+		font-weight: 500
+		border-radius: 8px
+		border: none
+		margin-bottom: 32px
+	/* .pricing__form-card-credits */
+	&__form-card-credits
+		color: #fff
+		font-weight: 500
+		text-align: center
+	/* .pricing__form-promocode */
+	&__form-promocode
+		display: block
+		max-width: 370px
+		width: 100%
+		margin-left: auto
+		margin-right: auto
+		width: 100%
+		padding: 12px
+		border-radius: 8px
+		border: none
+		margin-bottom: 32px
+		border: 1px solid #ddd
+	/* .pricing__form-btn */
+	&__form-btn
+		max-width: 370px
+		margin-right: auto
+		margin-left: auto
+		display: block
+		margin-bottom: 24px
+	/* .pricing__form-text */
+	&__form-text
+		font-weight: 500
+		a
+			color: $text
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+
+.qa-item
+	transition: background-color .35s ease-out
+	background-color: #fff
+	margin-left: auto
+	margin-right: auto
+	border-left: none
+	border-right: none
+	max-width: 1000px
+	margin-left: auto
+	margin-right: auto
+	&:not(:last-child)
+		border-bottom: 1px solid #e1e1e1
+	+media-breakpoint-up(sm)
+	// top: 20px
+	&.open
+		.qa-item__btn
+			transform: rotate(-45deg)
+	/* .qa-item__title-block */
+	&__title-block
+		display: flex
+		cursor: pointer
+		justify-content: space-between
+		align-items: center
+		padding: 15px
+		padding-left: 0
+		+media-breakpoint-up(sm)
+			padding: 25px 30px
+			padding-left: 0
+	/* .qa-item__title */
+	&__title
+		font-weight: 500
+		color: #000
+		display: flex
+		align-items: center
+		+media-breakpoint-up(md)
+			font-size: 18px
+		+media-breakpoint-up(lg)
+			font-size: 20px
+
+	/* .qa-item__btn */
+	&__btn
+		height: 16px
+		width: 16px
+		flex: 0 0 16px
+		transition: transform .35s ease-out
+		+media-breakpoint-up(sm)
+			height: 28px
+			width: 28px
+			flex: 0 0 28px
+	/* .qa-item__btn-svg */
+	&__btn-svg
+		height: 20px
+		width: 20px
+		flex: 0 0 20px
+		transform: rotate(45deg)
+		fill: $accent
+		transition: fill .35s ease-out, transform .35s ease-out
+	/* .qa-item__text-block */
+	&__text-block
+		max-height: 0
+		overflow: hidden
+		transition: max-height .5s ease
+	/* .qa-item__text */
+	&__text
+		padding: 20px 24px
+		padding-left: 15px
+		padding-top: 0
+		padding-left: 0
+		+media-breakpoint-up(sm)
 
 @keyframes "fade"
 	from
