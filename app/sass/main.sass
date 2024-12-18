@@ -1221,7 +1221,7 @@ img
 	/* .table__col-key */
 	&__col-key
 		font-weight: 400
-		font-size: 16px
+		font-size: 14px
 		line-height: 135%
 		color: #000
 		+media-breakpoint-up(sm)
@@ -1714,6 +1714,72 @@ img
 			background-color: transparent
 			text-decoration: none
 			color: #000
+
+.modal
+	position: fixed
+	z-index: 10
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	backdrop-filter: blur(15px)
+	background: rgba(28, 21, 31, 0.4)
+	display: flex
+	align-items: flex-start
+	justify-content: center
+	overflow-y: scroll
+	display: none
+	+media-breakpoint-up(lg)
+		@media screen and ( min-height: 600px )
+			align-items: center
+	&_video
+		align-items: center
+
+	/* .modal__block */
+	&__block
+		background-color: #fff
+		padding: 50px 16px
+		max-width: 500px
+		width: 100%
+		position: relative
+		border-radius: 12px
+		+media-breakpoint-up(sm)
+			padding: 50px
+			border-radius: 24px
+	/* .modal__close */
+	&__close
+		height: 32px
+		width: 32px
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		z-index: 20
+		right: 20px
+		top: 20px
+		cursor: pointer
+	/* .modal__close-svg */
+	&__close-svg
+		height: 14px
+		width: 14px
+		fill: #E0E0E0
+	/* .modal__title */
+	&__title
+		font-weight: 400
+		font-size: 25px
+		color: #fff
+		margin-bottom: 15px
+		+media-breakpoint-up(md)
+			font-size: 34px
+		+media-breakpoint-up(lg)
+			font-size: 40px
+	/* .modal__subtitle */
+	&__subtitle
+		font-weight: 400
+		font-size: 18px
+		line-height: 135%
+		color: #c6c6c6
+		margin-bottom: 35px
 
 @keyframes "fade"
 	from
