@@ -1792,8 +1792,12 @@ img
 	background-repeat: no-repeat
 	background-position: center
 	gap: 24px
+	padding: 0 8px
 	+media-breakpoint-up(sm)
 		min-height: 643px
+	&_contribution
+		background-image: url('../images/dest/contributors.jpg')
+
 	/* .about-hero__title */
 	&__title
 		text-align: center
@@ -1812,6 +1816,9 @@ img
 		font-weight: 500
 		font-size: 16px
 		text-align: center
+		max-width: 690px
+		margin-left: auto
+		margin-right: auto
 		+media-breakpoint-up(sm)
 			font-size: 18px
 
@@ -2024,6 +2031,235 @@ img
 	&__item-text
 		font-size: 18px
 		font-weight: 500
+
+.why
+	/* .why__row */
+	&__row
+		display: flex
+		justify-content: center
+		gap: 12px
+		flex-wrap: wrap
+		margin-bottom: 24px
+		+media-breakpoint-up(md)
+			flex-wrap: nowrap
+	/* .why__col */
+	&__col
+		flex: 0 1 300px
+
+	/* .why__item */
+	&__item
+
+	/* .why__item-img */
+	&__item-img
+		max-height: 250px
+		border-radius: 50%
+		border: 3px solid $accent
+		margin-bottom: 24px
+		display: block
+		margin-left: auto
+		margin-right: auto
+
+	/* .why__item-title */
+	&__item-title
+		font-size: 18px
+		font-weight: 500
+		margin-bottom: 12px
+		text-align: center
+		+media-breakpoint-up(sm)
+			font-size: 24px
+
+	/* .why__item-text */
+	&__item-text
+		text-align: center
+	/* .why__btn-block */
+	&__btn-block
+		text-align: center
+	/* .why__btn */
+	&__btn
+		width: 205px
+		display: inline-block
+		color: #000
+		background-color: #f1ebeb
+		text-align: center
+		padding: 13px
+		border-radius: 4px
+		font-weight: 500
+		transition: background-color .35s ease-out
+		&:hover
+			text-decoration: none
+			background-color: darken(#f1ebeb, 5% )
+			color: #000
+
+.mission
+	background-color: $accent
+	padding: 60px 20px 40px 20px
+	border-radius: 8px
+	position: relative
+	z-index: 1
+	+media-breakpoint-up(sm)
+		padding: 120px 40px 60px 40px
+		&:after
+			content: ''
+			position: absolute
+			z-index: 1
+			height: 30px
+			width: 280px
+			background-color: $accent
+			right: 200px
+			top: 105px
+	+media-breakpoint-up(lg)
+		padding: 220px 100px 60px 100px
+		&:after
+			top: 205px
+
+	/* .mission__block */
+	&__block
+		+media-breakpoint-up(sm)
+			padding: 80px 40px 40px 40px
+			border-radius: 4px
+			border: 3px solid #fff
+		+media-breakpoint-up(lg)
+			padding: 120px 60px 60px 60px
+
+	/* .mission__title */
+	&__title
+		font-weight: 500
+		margin-bottom: 32px
+	/* .mission__text */
+	&__text
+		font-weight: 500
+
+.steps
+	position: relative
+	z-index: 1
+	+media-breakpoint-up(sm)
+		&:after
+			content: ''
+			position: absolute
+			z-index: 1
+			width: 1px
+			background-color: #000
+			height: 80%
+			top: 13%
+			left: 50%
+	/* .steps__item */
+	&__item
+		&:not(:last-child)
+			margin-bottom: 16px
+	/* .steps__row */
+	&__row
+		+media-breakpoint-up(sm)
+			display: flex
+			align-items: center
+	&__row_reverse
+		flex-direction: row-reverse
+		.steps__left
+			+media-breakpoint-up(sm)
+				padding-left: 30px
+				padding-right: 0
+			+media-breakpoint-up(lg)
+				padding-left: 60px
+		.steps__right
+			+media-breakpoint-up(sm)
+				padding-left: 0
+				padding-right: 30px
+			+media-breakpoint-up(lg)
+				padding-right: 60px
+	/* .steps__left */
+	&__left
+		+media-breakpoint-up(sm)
+			flex: 1 0 50%
+			padding-right: 30px
+		+media-breakpoint-up(lg)
+			padding-right: 60px
+
+	/* .steps__item-img */
+	&__item-img
+		margin-bottom: 8px
+		+media-breakpoint-up(sm)
+			margin-bottom: 0
+
+	/* .steps__right */
+	&__right
+		+media-breakpoint-up(sm)
+			flex: 1 0 50%
+			padding-left: 30px
+		+media-breakpoint-up(lg)
+			padding-left: 60px
+
+	/* .steps__title */
+	&__title
+		font-size: 18px
+		font-weight: 500
+		+media-breakpoint-up(sm)
+			font-size: 28px
+		+media-breakpoint-up(md)
+			font-size: 32px
+
+	/* .steps__text */
+	&__text
+		max-width: 330px
+
+.steps-block-text
+	text-align: center
+	max-width: 760px
+	margin-left: auto
+	margin-right: auto
+	border-top: 1px solid #ddd
+	padding-top: 30px
+	margin-top: 60px
+
+.what-content
+	background-color: $accent
+	padding: 30px 12px
+	border-radius: 8px
+	margin-bottom: 36px
+	+media-breakpoint-up(sm)
+		padding: 30px
+	+media-breakpoint-up(lg)
+		padding: 50px
+	/* .what-content__title */
+	&__title
+		max-width: 500px
+		margin-bottom: 16px
+
+	/* .what-content__text */
+	&__text
+		margin-bottom: 32px
+		max-width: 800px
+
+	/* .what-content__row */
+	&__row
+		+media-breakpoint-up(md)
+			display: flex
+			margin: 0 -10px
+
+	/* .what-content__col */
+	&__col
+		margin-bottom: 12px
+		+media-breakpoint-up(md)
+			margin-bottom: 0
+			flex: 0 0 33.333%
+			padding: 0 10px
+
+	/* .what-content__item */
+	&__item
+		position: relative
+		z-index: 1
+
+	/* .what-content__img */
+	&__img
+		border-radius: 8px
+		width: 100%
+	/* .what-content__item-title */
+	&__item-title
+		position: absolute
+		bottom: 10px
+		left: 10px
+		color: #fff
+		font-size: 24px
+		font-weight: 500
+
 @keyframes "fade"
 	from
 		opacity: 0
