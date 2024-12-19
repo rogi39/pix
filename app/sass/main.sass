@@ -259,7 +259,7 @@ img
 	&_stock
 		background-color: #fff8dd
 	&_pricing
-		background-color: #fde999
+		background-color: $accent
 
 .container
 	padding: 0 10px
@@ -477,7 +477,7 @@ img
 			height: 20px
 			width: 20px
 			flex: 0 0 20px
-			fill: #fde999
+			fill: $accent
 
 	/* .menu__link */
 	&__link
@@ -624,7 +624,7 @@ img
 		border-radius: 8px
 
 .difference
-	background-color: #fde999
+	background-color: $accent
 	padding: 16px
 	border-radius: 8px
 	+media-breakpoint-up(sm)
@@ -759,7 +759,7 @@ img
 	&__item-svg
 
 .footer
-	background-color: #fde999
+	background-color: $accent
 	padding-top: 48px
 	/* .footer__row */
 	&__row
@@ -899,14 +899,14 @@ img
 	&__input-block
 		margin-bottom: 16px
 	&__btn
-		background-color: #fde999
+		background-color: $accent
 		color: #000
 		width: 100%
 		border: none
 		padding: 8px 0
 		border-radius: 4px
 		font-weight: 500
-		border: 1px solid #fde999
+		border: 1px solid $accent
 		transition: background-color $tr
 		&:hover
 			background-color: #fff
@@ -977,7 +977,7 @@ img
 			text-decoration: none
 			color: #8f8f8f
 		&.active
-			border-bottom: 2px solid #fde999
+			border-bottom: 2px solid $accent
 
 .profile
 	padding-bottom: 30px
@@ -1302,7 +1302,7 @@ img
 	/* .billing-credits__total */
 	&__total
 		font-size: 24px
-		color: #fde999
+		color: $accent
 		font-weight: 700
 
 	/* .billing-credits__total-text */
@@ -1313,9 +1313,9 @@ img
 
 	/* .billing-credits__btn */
 	&__btn
-		background-color: #fde999
+		background-color: $accent
 		color: #000
-		border: 1px solid #fde999
+		border: 1px solid $accent
 		transition: background-color $tr
 		display: inline-block
 		padding: 10px 40px
@@ -1703,9 +1703,9 @@ img
 		text-align: right
 	/* .billing-form__btn */
 	&__btn
-		background-color: #fde999
+		background-color: $accent
 		color: #000
-		border: 1px solid #fde999
+		border: 1px solid $accent
 		transition: background-color $tr
 		display: inline-block
 		padding: 10px 40px
@@ -1782,6 +1782,248 @@ img
 		color: #c6c6c6
 		margin-bottom: 35px
 
+.about-hero
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	min-height: 450px
+	background-image: url('../images/dest/about-hero.jpg')
+	background-repeat: no-repeat
+	background-position: center
+	gap: 24px
+	+media-breakpoint-up(sm)
+		min-height: 643px
+	/* .about-hero__title */
+	&__title
+		text-align: center
+		font-size: 1.5rem
+		color: #fff
+		font-weight: 700
+		line-height: 100%
+		+media-breakpoint-up(sm)
+			font-size: 2rem
+		+media-breakpoint-up(md)
+			font-size: 2.5rem
+
+	/* .about-hero__text */
+	&__text
+		color: #fff
+		font-weight: 500
+		font-size: 16px
+		text-align: center
+		+media-breakpoint-up(sm)
+			font-size: 18px
+
+	/* .about-hero__btn-row */
+	&__btn-row
+		display: flex
+		align-items: center
+		gap: 8px
+		flex-wrap: wrap
+		justify-content: center
+
+	/* .about-hero__btn */
+	&__btn
+		width: 205px
+		color: #fff
+		background-color: #000
+		text-align: center
+		padding: 13px
+		border-radius: 4px
+		transition: background-color .35s ease-out
+		&:hover
+			text-decoration: none
+			background-color: lighten(#000, 20% )
+			color: #fff
+	&__btn_reverse
+		background-color: #fff
+		color: #000
+		&:hover
+			background-color: lighten(#000, 90% )
+			color: #000
+
+.achieve
+	background-color: rgb(247, 247, 247)
+	padding: 30px 12px
+	+media-breakpoint-up(sm)
+		padding: 30px
+	+media-breakpoint-up(md)
+		padding: 60px
+	+media-breakpoint-up(lg)
+		padding: 60px 100px
+	/* .achieve__title */
+	&__title
+		font-size: 28px
+		text-align: center
+		margin-bottom: 16px
+		span
+			color: rgb(253, 233, 153)
+		+media-breakpoint-up(sm)
+			margin-bottom: 24px
+			font-size: 36px
+
+	/* .achieve__item */
+	&__item
+		padding: 20px 0
+		border-bottom: 1px solid #ddd
+		+media-breakpoint-up(sm)
+			display: flex
+			align-items: center
+	/* .achieve__item-title */
+	&__item-title
+		font-size: 1.5rem
+		font-weight: 500
+		margin-bottom: 8px
+		+media-breakpoint-up(sm)
+			font-size: 1.75rem
+			padding-right: 4px
+			padding-left: 8px
+			flex: 1 1 45%
+		+media-breakpoint-up(md)
+			padding-left: 48px
+			padding-right: 16px
+
+	/* .achieve__item-text */
+	&__item-text
+		font-weight: 500
+		font-size: 16px
+		+media-breakpoint-up(sm)
+			font-size: 18px
+			padding-right: 4px
+			padding-left: 8px
+			flex: 0 1 55%
+		+media-breakpoint-up(md)
+			padding-left: 48px
+			padding-right: 16px
+	/* .achieve__try */
+	&__try
+		background-color: #fff8dd
+		padding: 24px
+		background-image: url('../images/dest/pricing.png')
+		background-repeat: no-repeat
+		background-position: center right
+		background-size: 50%
+		margin-top: 32px
+		+media-breakpoint-up(sm)
+			padding: 48px
+
+	/* .achieve__try-title */
+	&__try-title
+		font-size: 1.5rem
+		line-height: 100%
+		margin-bottom: 18px
+		+media-breakpoint-up(sm)
+			font-size: 2rem
+		+media-breakpoint-up(md)
+			font-size: 2.5rem
+
+	/* .achieve__try-btn */
+	&__try-btn
+		background-color: #000
+		color: $accent
+		font-size: 18px
+		text-align: center
+		width: 205px
+		height: 48px
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 4px
+		transition: background-color .35s ease-out
+		&:hover
+			color: $accent
+			background-color: lighten(#000, 20%)
+			text-decoration: none
+
+.about-craft
+	/* .about-craft__title */
+	&__title
+		font-size: 1.5rem
+		line-height: 100%
+		margin-bottom: 18px
+		text-align: center
+		+media-breakpoint-up(sm)
+			font-size: 2rem
+		+media-breakpoint-up(md)
+			font-size: 2.5rem
+
+	/* .about-craft__text */
+	&__text
+		max-width: 730px
+		text-align: center
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 18px
+
+	/* .about-craft__btn-block */
+	&__btn-block
+		text-align: center
+	/* .about-craft__btn */
+	&__btn
+		width: 205px
+		display: inline-block
+		color: #fff
+		background-color: #000
+		text-align: center
+		padding: 13px
+		border-radius: 4px
+		transition: background-color .35s ease-out
+		&:hover
+			text-decoration: none
+			background-color: lighten(#000, 20% )
+			color: #fff
+
+.about-stock
+	/* .about-stock__title */
+	&__title
+		font-size: 1.5rem
+		line-height: 130%
+		margin-bottom: 18px
+		text-align: center
+		max-width: 800px
+		margin-left: auto
+		margin-right: auto
+		+media-breakpoint-up(sm)
+			font-size: 2rem
+		+media-breakpoint-up(md)
+			font-size: 2.5rem
+
+	/* .about-stock__row */
+	&__row
+		+media-breakpoint-up(md)
+			gap: 32px
+			display: flex
+	/* .about-stock__left */
+	&__left
+		max-width: 575px
+		margin-bottom: 36px
+		+media-breakpoint-up(md)
+			margin-bottom: 0
+
+	/* .about-stock__right */
+	&__right
+		max-width: 575px
+	/* .about-stock__item */
+	&__item
+		padding: 0 0 0 40px
+		margin-bottom: 32px
+		background-image: url('../images/check.png')
+		background-repeat: no-repeat
+		background-position: 0% 6%
+		+media-breakpoint-up(md)
+			padding: 0 40px
+	/* .about-stock__item-title */
+	&__item-title
+		font-size: 24px
+		line-height: 120%
+		margin-bottom: 12px
+		+media-breakpoint-up(sm)
+			font-size: 32px
+	/* .about-stock__item-text */
+	&__item-text
+		font-size: 18px
+		font-weight: 500
 @keyframes "fade"
 	from
 		opacity: 0
