@@ -1844,6 +1844,8 @@ img
 		min-height: 643px
 	&_contribution
 		background-image: url('../images/dest/contributors.jpg')
+	&_careers
+		background-image: url('../images/dest/careers.jpg')
 
 	/* .about-hero__title */
 	&__title
@@ -2306,6 +2308,70 @@ img
 		color: #fff
 		font-size: 24px
 		font-weight: 500
+
+.evolutionary
+	background-image: url('../images/dest/evolutionary.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center bottom
+	/* .evolutionary__block */
+	&__block
+		max-width: 650px
+		text-align: center
+		margin-left: auto
+		margin-right: auto
+		font-weight: 500
+		font-size: 16px
+		+media-breakpoint-up(sm)
+			font-size: 18px
+
+.about-us
+	/* .about-us__title-row */
+	&__title-row
+		display: flex
+		flex-wrap: wrap
+		gap: 12px
+		margin-bottom: 48px
+	/* .about-us__title */
+	&__title
+		flex: 0 1 500px
+
+	/* .about-us__title-text */
+	&__title-text
+		max-width: 630px
+		font-weight: 700
+		font-size: 18px
+		+media-breakpoint-up(sm)
+			font-size: 24px
+
+	/* .about-us__items */
+	&__items
+		display: flex
+		flex-wrap: wrap
+		row-gap: 24px
+		margin-bottom: 64px
+	/* .about-us__item */
+	&__item
+		font-size: 18px
+		font-weight: 500
+		display: flex
+		gap: 8px
+		flex: 0 0 100%
+		+media-breakpoint-up(sm)
+			flex: 0 0 50%
+		+media-breakpoint-up(md)
+			flex: 0 0 33.33%
+
+	/* .about-us__img */
+	&__img
+		margin-bottom: 32px
+
+	/* .about-us__text */
+	&__text
+		font-size: 18px
+		font-weight: 500
+		margin-bottom: 16px
+		max-width: 660px
 
 @keyframes "fade"
 	from
